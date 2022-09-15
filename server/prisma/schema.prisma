@@ -12,7 +12,7 @@ model Game {
   title     String
   bannerUrl String
 
-  Ads        Ad[]
+  Ads Ad[]
 }
 
 model Ad {
@@ -22,7 +22,7 @@ model Ad {
   yearsPlaying    Int
   discord         String
   weekDays        String
-  hoursStart      Int
+  hourStart       Int
   hourEnd         Int
   useVoiceChannel Boolean
   createdAt       DateTime @default(now())
