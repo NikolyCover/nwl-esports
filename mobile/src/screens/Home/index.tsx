@@ -12,6 +12,7 @@ import { styles } from './styles';
 
 export function Home() {
   const [games, setGames] = useState<GameCardProps[]>([])
+
   const navigation = useNavigation()
 
   function handleOpenGame({ id, title, bannerUrl }: GameCardProps) {
